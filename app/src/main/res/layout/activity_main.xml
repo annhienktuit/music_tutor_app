@@ -16,7 +16,7 @@
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="0dp"
-
+        android:onClick="soundMode"
         android:layout_marginTop="465dp"
         android:layout_marginEnd="0dp"
         android:text="Sound mode" />
@@ -34,7 +34,7 @@
 
         android:layout_marginTop="402dp"
         android:layout_marginEnd="0dp"
-        android:onClick="muteMode"
+
         android:text="Mute mode" />
 
     <ImageView

@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void muteMode(View w)
+    public void soundMode(View w)
     {
         Intent gotoSoundMode= new Intent();
         gotoSoundMode.setClass(this,soundModeActivity.class);
