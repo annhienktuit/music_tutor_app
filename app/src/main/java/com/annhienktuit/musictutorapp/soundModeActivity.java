@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -23,9 +24,8 @@ public class soundModeActivity extends AppCompatActivity {
     int position;
     MediaPlayer correct;
     MediaPlayer incorrect;
-
-
-
+    int Score;
+    TextView textView_score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +33,9 @@ public class soundModeActivity extends AppCompatActivity {
         correct= MediaPlayer.create(this,R.raw.correct);
         incorrect= MediaPlayer.create(this,R.raw.incorrect);
         linearLayout=(LinearLayout) findViewById(R.id.linearlayout_image);
+        Score = 0;
+        textView_score=(TextView) findViewById(R.id.textView_score) ;
+        textView_score.setText("Your score is "+ Score);
 
         arrayimage=new ArrayList<>();
         arrayimage.add(R.drawable.a);
@@ -55,6 +58,8 @@ public class soundModeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(position==0) {
+                    Score++;
+                    textView_score.setText("Your score is "+ Score);
                     Random random=new Random();
                     int vitri=random.nextInt(arrayimage.size());
                     position=vitri;
@@ -74,6 +79,8 @@ public class soundModeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(position==1) {
+                    Score++;
+                    textView_score.setText("Your score is "+ Score);
                     Random random=new Random();
                     int vitri=random.nextInt(arrayimage.size());
                     position=vitri;
@@ -93,6 +100,8 @@ public class soundModeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(position==2) {
+                    Score++;
+                    textView_score.setText("Your score is "+ Score);
                     Random random=new Random();
                     int vitri=random.nextInt(arrayimage.size());
                     position=vitri;
@@ -112,6 +121,8 @@ public class soundModeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(position==3) {
+                    Score++;
+                    textView_score.setText("Your score is "+ Score);
                     Random random=new Random();
                     int vitri=random.nextInt(arrayimage.size());
                     position=vitri;
@@ -131,6 +142,8 @@ public class soundModeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(position==4) {
+                    Score++;
+                    textView_score.setText("Your score is "+ Score);
                     Random random=new Random();
                     int vitri=random.nextInt(arrayimage.size());
                     position=vitri;
@@ -150,6 +163,8 @@ public class soundModeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(position==5) {
+                    Score++;
+                    textView_score.setText("Your score is "+ Score);
                     Random random=new Random();
                     int vitri=random.nextInt(arrayimage.size());
                     position=vitri;
@@ -168,6 +183,8 @@ public class soundModeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(position==6) {
+                    Score++;
+                    textView_score.setText("Your score is "+ Score);
                     Random random=new Random();
                     int vitri=random.nextInt(arrayimage.size());
                     position=vitri;

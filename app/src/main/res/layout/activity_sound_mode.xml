@@ -28,7 +28,7 @@
 
         <Button
             android:id="@+id/button_D"
-            android:background="#9c27b0"
+            android:background="#546e7a"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
         <Button
             android:id="@+id/button_E"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:background="#673ab7"
+            android:background="#fbc02d"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -91,6 +91,19 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="85dp"
         android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_score"
+        android:layout_width="187dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="@font/roboto_light"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

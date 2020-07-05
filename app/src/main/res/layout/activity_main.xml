@@ -9,33 +9,19 @@
     <Button
         android:id="@+id/button_sound"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
+        android:layout_width="282dp"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="58dp"
         android:onClick="soundMode"
-        android:layout_marginTop="465dp"
-        android:layout_marginEnd="0dp"
-        android:text="Sound mode" />
-
-    <Button
-        android:id="@+id/button_mute"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
-
-        android:layout_marginTop="402dp"
-        android:layout_marginEnd="0dp"
-
-        android:text="Mute mode" />
+        android:background="@drawable/btn_rounded"
+        android:text="Get Started" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -46,4 +32,31 @@
         android:layout_marginStart="31dp"
         android:layout_marginTop="26dp"
         app:srcCompat="@drawable/main_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="209dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Choose the correct music note"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="323dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="149dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Get point for each correct answer"
+        android:textAlignment="center" />
 </RelativeLayout>
