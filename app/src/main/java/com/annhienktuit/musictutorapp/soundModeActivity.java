@@ -54,7 +54,7 @@ public class soundModeActivity extends AppCompatActivity {
         button_a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(position==5)
+                if(position==0)
                     Toast.makeText(soundModeActivity.this,"Correct !!!",Toast.LENGTH_LONG).show();
                 else
                     Toast.makeText(soundModeActivity.this,"WRONG !!!",Toast.LENGTH_LONG).show();
@@ -62,29 +62,7 @@ public class soundModeActivity extends AppCompatActivity {
         });
         //B
         Button button_b=(Button) findViewById(R.id.button_B);
-        button_a.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(position==6)
-                    Toast.makeText(soundModeActivity.this,"Correct !!!",Toast.LENGTH_LONG).show();
-                else
-                    Toast.makeText(soundModeActivity.this,"WRONG !!!",Toast.LENGTH_LONG).show();
-            }
-        });
-        //C
-        Button button_c=(Button) findViewById(R.id.button_C);
-        button_a.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(position==0)
-                    Toast.makeText(soundModeActivity.this,"Correct !!!",Toast.LENGTH_LONG).show();
-                else
-                    Toast.makeText(soundModeActivity.this,"WRONG !!!",Toast.LENGTH_LONG).show();
-            }
-        });
-        //D
-        Button button_d=(Button) findViewById(R.id.button_D);
-        button_a.setOnClickListener(new View.OnClickListener() {
+        button_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(position==1)
@@ -93,9 +71,9 @@ public class soundModeActivity extends AppCompatActivity {
                     Toast.makeText(soundModeActivity.this,"WRONG !!!",Toast.LENGTH_LONG).show();
             }
         });
-        //E
-        Button button_e=(Button) findViewById(R.id.button_E);
-        button_a.setOnClickListener(new View.OnClickListener() {
+        //C
+        Button button_c=(Button) findViewById(R.id.button_C);
+        button_c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(position==2)
@@ -104,9 +82,9 @@ public class soundModeActivity extends AppCompatActivity {
                     Toast.makeText(soundModeActivity.this,"WRONG !!!",Toast.LENGTH_LONG).show();
             }
         });
-        //F
-        Button button_f=(Button) findViewById(R.id.button_F);
-        button_a.setOnClickListener(new View.OnClickListener() {
+        //D
+        Button button_d=(Button) findViewById(R.id.button_D);
+        button_d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(position==3)
@@ -115,12 +93,33 @@ public class soundModeActivity extends AppCompatActivity {
                     Toast.makeText(soundModeActivity.this,"WRONG !!!",Toast.LENGTH_LONG).show();
             }
         });
-        //G
-        Button button_g=(Button) findViewById(R.id.button_G);
-        button_a.setOnClickListener(new View.OnClickListener() {
+        //E
+        Button button_e=(Button) findViewById(R.id.button_E);
+        button_e.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(position==4)
+                    Toast.makeText(soundModeActivity.this,"Correct !!!",Toast.LENGTH_LONG).show();
+                else
+                    Toast.makeText(soundModeActivity.this,"WRONG !!!",Toast.LENGTH_LONG).show();
+            }
+        });
+        //F
+        Button button_f=(Button) findViewById(R.id.button_F);
+        button_f.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(position==5)
+                    Toast.makeText(soundModeActivity.this,"Correct !!!",Toast.LENGTH_LONG).show();
+                else
+                    Toast.makeText(soundModeActivity.this,"WRONG !!!",Toast.LENGTH_LONG).show();
+            }
+        });
+        Button button_g=(Button) findViewById(R.id.button_G);
+        button_g.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(position==6)
                     Toast.makeText(soundModeActivity.this,"Correct !!!",Toast.LENGTH_LONG).show();
                 else
                     Toast.makeText(soundModeActivity.this,"WRONG !!!",Toast.LENGTH_LONG).show();
