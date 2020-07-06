@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class soundModeActivity extends AppCompatActivity {
-
+    private Button aboutme;
     LinearLayout linearLayout;
     ArrayList<Integer> arrayimage;
     ArrayList<Button> arraybutton;
@@ -36,7 +36,13 @@ public class soundModeActivity extends AppCompatActivity {
         Score = 0;
         textView_score=(TextView) findViewById(R.id.textView_score) ;
         textView_score.setText("Your score is "+ Score);
-
+        aboutme = (Button) findViewById(R.id.button_aboutme);
+        aboutme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialog();
+            }
+        });
         arrayimage=new ArrayList<>();
         arrayimage.add(R.drawable.a);
         arrayimage.add(R.drawable.b);
@@ -199,6 +205,11 @@ public class soundModeActivity extends AppCompatActivity {
             }
         });
     }
+    public void openDialog()
+    {
+        AboutMeDialog aboutMeDialog= new AboutMeDialog();
+        aboutMeDialog.show(getSupportFragmentManager(),"about me dialog");
 
+    }
 
 }
